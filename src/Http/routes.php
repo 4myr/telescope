@@ -48,6 +48,9 @@ Route::get('/telescope-api/queries/{telescopeEntryId}', 'QueriesController@show'
 Route::post('/telescope-api/models', 'ModelsController@index');
 Route::get('/telescope-api/models/{telescopeEntryId}', 'ModelsController@show');
 
+// Statistics...
+Route::post('/telescope-api/statistics', 'StatisticsController@index');
+
 // Requests entries...
 Route::post('/telescope-api/requests', 'RequestsController@index');
 Route::get('/telescope-api/requests/{telescopeEntryId}', 'RequestsController@show');

@@ -1,5 +1,5 @@
 export default [
-    { path: '/', redirect: '/requests' },
+    { path: '/', redirect: '/stats' },
 
     {
         path: '/mail/:id',
@@ -125,6 +125,12 @@ export default [
         path: '/requests',
         name: 'requests',
         component: require('./screens/requests/index').default,
+    },
+
+    {
+        path: '/stats',
+        name: 'statistics',
+        component: require('./screens/statistics/index').default,
     },
 
     {
