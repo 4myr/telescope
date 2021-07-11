@@ -97,8 +97,8 @@ export default {
         <table id="indexScreen" class="table table-hover table-sm mb-0 penultimate-column-left">
             <tbody>
                 <tr v-for="item in statistics" :key="item.id">
-                    <td>{{ item.label }}</td>
-                    <td>{{ item.value }}</td>
+                    <td width="50%">{{ item.label }}</td>
+                    <td width="50%">{{ item.value }}</td>
                 </tr>
             </tbody>
         </table>

@@ -16,9 +16,9 @@ class GlobalStatus
     }
     public static function tps()
     {
-        $HandlerCommit = self::get('Handler_commit');
+        $HadlerCommit = self::get('Handler_commit');
         $HandlerRollbacks = self::get('Handler_rollbacks');
-        $tps = ($HandlerCommit + $HandlerRollbacks) / self::uptime();
+        $tps = ($HadlerCommit + $HandlerRollbacks) / self::uptime();
         return round($tps, 3);
     }
     public static function uptime()
